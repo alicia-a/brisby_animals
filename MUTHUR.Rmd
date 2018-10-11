@@ -1,0 +1,66 @@
+---
+title: "Title goes here"
+author: "A Allan"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  word_document:
+    reference_docx: ./reference/word_style_template.docx
+  html_document:
+    df_print: paged
+---
+
+# Background  
+Basic description of the project.   
+Also include a table of the data files that occur in this project and describe the location of a data dictionary.
+
+Data        | Details                       |  Other deets
+------------|-------------------------------|-------------
+Data 1      | Description                   |  Total mess
+Data 2      | etc...                        |  Hopefully less messy.   
+  
+
+##### - 
+# Data tidying   
+In this section are scripts for tidying your data.  
+
+```{r eval = FALSE}
+
+# 1. Does X.
+source(".scripts/1_XXXXXX.R")
+
+# 2. Does Y.
+source(".scripts/2_XXXXXX.R")
+
+
+```
+
+##### -
+# Explore your data  
+In this section are scripts for exploring your data.  
+
+```{r eval = FALSE}
+
+# Script for X
+source(".scripts/1_XXXXXX.R")
+
+```
+
+##### - 
+# Produce outputs  
+In this section are scripts for producing final output from the data.  
+
+```{r eval = FALSE}
+
+# Reporting script
+source(".reference/1_XXXXXX.Rmd")
+
+
+```
+
+
+
+##### - 
+# Final notes  
+
+Any other junk you need to add goes here!
+
