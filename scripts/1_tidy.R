@@ -1,5 +1,5 @@
 #####
-# 1 - Tidying
+# 1 - Tidying - Brisband Animal Permits
 #####
 
 # Libraries
@@ -23,4 +23,7 @@ names(an_fac) <- c("permit_type", "breed", "suburb")
 # What do we have as far as missing data is concerned?
 map_dbl(an_fac, ~ sum(is.na(.)))
 
-# This data is pretty tidy, so we'll just leave it there for now...
+# We'll leave NAs in for now.
+# Ok, this data is pretty tidy, so we'll just leave it there for now...
+
+saveRDS(an_fac, "data/working/animal-permits-tidy.Rdata")
