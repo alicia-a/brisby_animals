@@ -1,5 +1,5 @@
 ---
-title: "Title goes here"
+title: "Brisby Animals"
 author: "A Allan"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
@@ -10,38 +10,34 @@ output:
 ---
 
 # Background  
-Basic description of the project.   
-Also include a table of the data files that occur in this project and describe the location of a data dictionary.
+For funsies, let's explore the Animal Registration data from Brisbane City Council.
 
-Data        | Details                       |  Other deets
-------------|-------------------------------|-------------
-Data 1      | Description                   |  Total mess
-Data 2      | etc...                        |  Hopefully less messy.   
+Data               | Details                       |  Other deets
+-------------------|-------------------------------|-------------
+BCC Animal permits | dl from https://www.data.brisbane.qld.gov.au/data/dataset/current-animal-related-permits | 2018-10-11               
   
-
 ##### - 
 # Data tidying   
-In this section are scripts for tidying your data.  
+This data is very tidy to begin with, so not much tidying to be done.
 
-```{r eval = FALSE}
+```{r eval = TRUE, echo = TRUE}
 
-# 1. Does X.
-source(".scripts/1_XXXXXX.R")
-
-# 2. Does Y.
-source(".scripts/2_XXXXXX.R")
-
+# 1. Data tidying
+source("scripts/1_tidy.R")
 
 ```
 
 ##### -
 # Explore your data  
-In this section are scripts for exploring your data.  
+Want to explore:  
+- Breed proportions
+- Locations of breeds
 
-```{r eval = FALSE}
+
+```{r eval = TRUE}
 
 # Script for X
-source(".scripts/1_XXXXXX.R")
+source("scripts/2_explore.R")
 
 ```
 
